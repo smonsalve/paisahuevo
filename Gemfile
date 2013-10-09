@@ -7,15 +7,15 @@ gem 'sqlite3'
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do
+
   gem 'sass-rails',   '~> 4.0.0.beta1'
   gem 'coffee-rails', '~> 4.0.0.beta1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', platforms: :ruby
+   gem 'therubyracer', platforms: :ruby
 
   gem 'uglifier', '>= 1.0.3'
-end
+
 
 gem 'jquery-rails'
 
@@ -36,3 +36,10 @@ gem 'jbuilder', '~> 1.0.1'
 
 # To use debugger
 # gem 'debugger'
+
+# twitter bootstrap css & javascript toolkit
+gem 'twitter-bootswatch-rails', '~> 3.0.0'
+
+# twitter bootstrap helpers gem, e.g., alerts etc...
+gem 'twitter-bootswatch-rails-helpers'
+
