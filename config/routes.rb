@@ -1,4 +1,12 @@
 Paisahuevo::Application.routes.draw do
+  resources :products
+
+  resources :payments
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  resources :invoices
+
   resources :pages
 
   get "home/index"

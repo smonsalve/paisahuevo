@@ -29,10 +29,12 @@ gem 'jbuilder', '~> 1.0.1'
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano', group: :development
+gem 'capistrano'#, group: :development
+
+gem 'rvm-capistrano'
 
 # To use debugger
 # gem 'debugger'
@@ -42,4 +44,7 @@ gem 'twitter-bootswatch-rails', '~> 3.0.0'
 
 # twitter bootstrap helpers gem, e.g., alerts etc...
 gem 'twitter-bootswatch-rails-helpers'
+
+# active admin
+gem 'activeadmin', github: 'gregbell/active_admin'
 
