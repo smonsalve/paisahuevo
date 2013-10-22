@@ -3,11 +3,12 @@
 <table>
   <thead>
     <tr>
-      <th>Invoice number</th>
       <th>Description</th>
-      <th>Customer name</th>
-      <th>Payment method</th>
+      <th>Unit value</th>
+      <th>Quantity</th>
+      <th>Customer</th>
       <th>Place</th>
+      <th>Payment method</th>
       <th></th>
       <th></th>
       <th></th>
@@ -17,11 +18,12 @@
   <tbody>
     <% @invoices.each do |invoice| %>
     <tr>
-      <td><%= invoice.invoice_number %></td>
       <td><%= invoice.description %></td>
-      <td><%= invoice.customer_name %></td>
-      <td><%= invoice.payment_method %></td>
-      <td><%= invoice.place %></td>
+      <td><%= invoice.unit_value %></td>
+      <td><%= invoice.quantity %></td>
+      <td><%= invoice.customer_id %></td>
+      <td><%= invoice.place_id %></td>
+      <td><%= invoice.payment_method_id %></td>
       <td><%= link_to 'Show', invoice %></td>
       <td><%= link_to 'Edit', edit_invoice_path(invoice) %></td>
       <td><%= link_to 'Destroy', invoice, method: :delete, data: { confirm: 'Are you sure?' } %></td>

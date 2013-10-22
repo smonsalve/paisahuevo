@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131012233755) do
+ActiveRecord::Schema.define(version: 20131022012000) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -46,12 +46,22 @@ ActiveRecord::Schema.define(version: 20131012233755) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
 
+  create_table "customers", force: true do |t|
+    t.string   "name"
+    t.string   "indentification_card"
+    t.string   "phone"
+    t.integer  "place_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "invoices", force: true do |t|
-    t.string   "invoice_number"
-    t.string   "description"
-    t.string   "customer_name"
-    t.string   "payment_method"
-    t.string   "place"
+    t.text     "description"
+    t.integer  "unit_value"
+    t.integer  "quantity"
+    t.integer  "customer_id"
+    t.integer  "place_id"
+    t.integer  "payment_method_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -66,9 +76,22 @@ ActiveRecord::Schema.define(version: 20131012233755) do
 
   add_index "pages", ["permalinks"], name: "index_pages_on_permalinks"
 
+  create_table "payment_methods", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "payments", force: true do |t|
-    t.string   "description"
-    t.string   "payment_receiver"
+    t.text     "description"
+    t.integer  "value"
+    t.integer  "payment_method_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "places", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

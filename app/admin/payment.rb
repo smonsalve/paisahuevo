@@ -1,3 +1,3 @@
-ActiveAdmin.register Payment do
+#ActiveAdmin.register Payment do
 
-end
+  #end

@@ -1,12 +1,18 @@
 Paisahuevo::Application.routes.draw do
-  resources :products
+  resources :payment_methods
 
   resources :payments
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
+  resources :customers
+
+  resources :places
+
   resources :invoices
 
+  resources :products
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources :pages
 
   get "home/index"

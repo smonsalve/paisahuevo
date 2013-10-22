@@ -1,15 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  invoice_number: MyString
-  description: MyString
-  customer_name: MyString
-  payment_method: MyString
-  place: MyString
+  description: MyText
+  unit_value: 1
+  quantity: 1
+  customer_id: 1
+  place_id: 1
+  payment_method_id: 1
 
 two:
-  invoice_number: MyString
-  description: MyString
-  customer_name: MyString
-  payment_method: MyString
-  place: MyString
+  description: MyText
+  unit_value: 1
+  quantity: 1
+  customer_id: 1
+  place_id: 1
+  payment_method_id: 1

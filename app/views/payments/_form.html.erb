@@ -13,11 +13,15 @@
 
   <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_field :description %>
+    <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :payment_receiver %><br />
-    <%= f.text_field :payment_receiver %>
+    <%= f.label :value %><br />
+    <%= f.number_field :value %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_method_id %><br />
+    <%= f.number_field :payment_method_id %>
   </div>
   <div class="actions">
     <%= f.submit %>

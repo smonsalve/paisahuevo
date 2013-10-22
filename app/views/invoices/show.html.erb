@@ -1,28 +1,33 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Invoice number:</strong>
-  <%= @invoice.invoice_number %>
-</p>
-
-<p>
   <strong>Description:</strong>
   <%= @invoice.description %>
 </p>
 
 <p>
-  <strong>Customer name:</strong>
-  <%= @invoice.customer_name %>
+  <strong>Unit value:</strong>
+  <%= @invoice.unit_value %>
 </p>
 
 <p>
-  <strong>Payment method:</strong>
-  <%= @invoice.payment_method %>
+  <strong>Quantity:</strong>
+  <%= @invoice.quantity %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @invoice.customer_id %>
 </p>
 
 <p>
   <strong>Place:</strong>
-  <%= @invoice.place %>
+  <%= @invoice.place_id %>
+</p>
+
+<p>
+  <strong>Payment method:</strong>
+  <%= @invoice.payment_method_id %>
 </p>
 
 

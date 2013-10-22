@@ -12,24 +12,28 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :invoice_number %><br />
-    <%= f.text_field :invoice_number %>
-  </div>
-  <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_field :description %>
+    <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :customer_name %><br />
-    <%= f.text_field :customer_name %>
+    <%= f.label :unit_value %><br />
+    <%= f.number_field :unit_value %>
   </div>
   <div class="field">
-    <%= f.label :payment_method %><br />
-    <%= f.text_field :payment_method %>
+    <%= f.label :quantity %><br />
+    <%= f.number_field :quantity %>
   </div>
   <div class="field">
-    <%= f.label :place %><br />
-    <%= f.text_field :place %>
+    <%= f.label :customer_id %><br />
+    <%= f.number_field :customer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :place_id %><br />
+    <%= f.number_field :place_id %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_method_id %><br />
+    <%= f.number_field :payment_method_id %>
   </div>
   <div class="actions">
     <%= f.submit %>
