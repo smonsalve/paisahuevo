@@ -3,6 +3,7 @@
  *= require_self
  *= require spacelab/loader
  *= require spacelab/bootswatch
+ *= require_tree .
 */
 
 body { padding-top: 35px; }

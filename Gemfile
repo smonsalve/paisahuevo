@@ -17,7 +17,9 @@ gem 'sqlite3'
   gem 'uglifier', '>= 1.0.3'
 
 
-gem 'jquery-rails'
+gem 'rails3-jquery-autocomplete', git: 'https://github.com/francisd/rails3-jquery-autocomplete'
+
+gem "jquery-ui-rails", "~> 4.1.0"
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'

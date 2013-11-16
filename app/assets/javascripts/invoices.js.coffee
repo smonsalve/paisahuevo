@@ -3,9 +3,9 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 jQuery ->
   $('#invoice_customer_name').autocomplete
-    source: ['foo', 'food', 'four']
+    source: $('#invoice_customer_name').data('autocomplete-source')
 	
 	
 jQuery ->
   $('#invoice_place_name').autocomplete
-    source: ['foo', 'food', 'four']
+    source: $('#invoice_place_name').data('autocomplete-source')

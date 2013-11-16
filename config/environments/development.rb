@@ -24,4 +24,5 @@ Paisahuevo::Application.configure do
 
   # Debug mode disables concatenation and preprocessing of assets.
   config.assets.debug = true
+  
 end

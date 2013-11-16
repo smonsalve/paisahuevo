@@ -24,8 +24,8 @@
     <%= f.text_field :phone %>
   </div>
   <div class="field">
-    <%= f.label :place_id %><br />
-    <%= f.number_field :place_id %>
+    <%= f.label :place_name %><br />
+    <%= f.number_field :place_name,data:{autocomplete_source: Place.order(:name).map(&:name) } %>
   </div>
   <div class="actions">
     <%= f.submit %>

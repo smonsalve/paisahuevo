@@ -25,11 +25,11 @@
   </div>
   <div class="field">
     <%= f.label :customer_name %><br />
-    <%= f.text_field :customer_name %>
+    <%= f.text_field :customer_name, data:{autocomplete_source: Customer.order(:name).map(&:name)}%>
   </div>
   <div class="field">
     <%= f.label :place_name %><br />
-    <%= f.text_field :place_name %>
+    <%= f.text_field :place_name,data:{autocomplete_source: Place.order(:name).map(&:name) }%>
   </div>
   <div class="field">
     <%= f.label :payment_method_id %><br />

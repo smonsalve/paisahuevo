@@ -11,9 +11,10 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery-ui
+//= require jquery.ui.all
 //= require jquery_ujs
 //= require bootswatch/loader
 //= require bootswatch/bootswatch
 //= require turbolinks
+//= require_tree .
 

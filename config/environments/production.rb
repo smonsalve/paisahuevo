@@ -23,7 +23,7 @@ Paisahuevo::Application.configure do
   config.serve_static_assets = false
 
 
-  config.assets.precompile += %w(admin.js admin.css spacelab.js spacelab..css)
+  config.assets.precompile += %w(application.js spacelab.js spacelab.css)
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor  = :uglifier
