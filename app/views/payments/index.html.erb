@@ -1,11 +1,11 @@
-<h1>Listing payments</h1>
+<h1><%= t(".title")%></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Description</th>
-      <th>Value</th>
-      <th>Payment method</th>
+      <th><%= t(".description")%></th>
+      <th><%= t(".value")%></th>
+      <th><%= t(".payment_method")%></th>
       <th></th>
       <th></th>
       <th></th>
@@ -18,9 +18,9 @@
       <td><%= payment.description %></td>
       <td><%= payment.value %></td>
       <td><%= payment.payment_method_id %></td>
-      <td><%= link_to 'Show', payment %></td>
-      <td><%= link_to 'Edit', edit_payment_path(payment) %></td>
-      <td><%= link_to 'Destroy', payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td><%= link_to t(".show"), payment %></td>
+      <td><%= link_to t(".edit"), edit_payment_path(payment) %></td>
+      <td><%= link_to t(".destroy"), payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br />
 
-<%= link_to 'New Payment', new_payment_path %>
+<%= link_to t(".new_payment"), new_payment_path %>

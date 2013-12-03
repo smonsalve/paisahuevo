@@ -1,12 +1,12 @@
-<h1>Listing customers</h1>
+<h1> <%= t ".title" %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Indentification card</th>
-      <th>Phone</th>
-      <th>Place</th>
+      <th> <%= t ".name" %></th>
+      <th> <%= t ".identification_card" %></th>
+      <th> <%= t ".phone" %></th>
+      <th> <%= t ".place" %></th>
       <th></th>
       <th></th>
       <th></th>
@@ -20,9 +20,9 @@
       <td><%= customer.indentification_card %></td>
       <td><%= customer.phone %></td>
       <td><%= customer.place_id %></td>
-      <td><%= link_to 'Show', customer %></td>
-      <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
-      <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td><%= link_to t(".show"), customer %></td>
+      <td><%= link_to t(".edit"), edit_customer_path(customer) %></td>
+      <td><%= link_to t(".destroy"), customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br />
 
-<%= link_to 'New Customer', new_customer_path %>
+<%= link_to t(".new_customer"), new_customer_path %>

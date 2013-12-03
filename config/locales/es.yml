@@ -1,0 +1,113 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+es:
+  activerecord:
+     models:
+       customer: "Cliente"
+       invoice: "Factura"
+       payment: "Pago"
+       place: "Lugar"
+       product: "Producto"
+  helpers:
+    links:
+      back: "Atras"
+    label:
+      customer:
+        name: 'Nombre'
+        indentification_card: 'Cedula'
+        phone: 'Telefono'
+        place_name: "Lugar"
+      product:
+        name: 'Nombre'
+      payment:
+        description: 'Descripcion'
+        value: 'Valor'
+        payment_method_id: 'Metodo de pago'
+      invoice:
+        description: 'Descripcion'
+        unit_value: 'Valor Unitario'
+        quantity: 'Cantidad'
+        place_name: "Lugar"
+        customer_name: "Cliente"
+        payment_method_id: 'Metodo de pago'
+        
+    submit:
+        create: "Crear %{model}"
+        update: "Actualizar %{model}"
+  customers:
+    index:
+      title: "Lista de clientes"
+      name: "Nombre"
+      identification_card: "Cedula"
+      phone: "Telefono"
+      place: "Lugar"
+      show: "Mostrar"
+      edit: "Editar"
+      destroy: "Eliminar"
+      new_customer: "Nuevo Cliente"
+    new:
+      title: "Nuevo Cliente"
+    edit:
+      title: "Editar Cliente"
+  products:
+    index:
+      title: "Lista de productos"
+      name: "Nombre"
+      show: "Mostrar"
+      edit: "Editar"
+      destroy: "Eliminar"
+      new_customer: "Nuevo Cliente"
+    new:
+      title: "Nuevo Producto"
+    edit:
+      title: "Editar Producto"
+  invoices:
+    index:
+      title: "Lista de facturas"
+      description: "Descripcion"
+      unit_value: "Valor unitario"
+      quantity: "Cantidad"
+      customer: "Cliente"
+      place: "Lugar"
+      payment_method: "Metodo de pago"
+      show: "Mostrar"
+      edit: "Editar"
+      destroy: "Eliminar"
+      new_invoice: "Nueva Factura"
+    new:
+      title: "Nueva Factura"
+    edit:
+      title: "Editar Factura"
+  payments:
+    index:
+      title: "Lista de pagos"
+      description: "Descripcion"
+      value: "Valor"
+      payment_method: "Metodo de pago"
+      show: "Mostrar"
+      edit: "Editar"
+      destroy: "Eliminar"
+      new_payment: "Nuevo Pago"
+    new:
+      title: "Nuevo Pago"
+    edit:
+      title: "Editar pago"
